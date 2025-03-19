@@ -1,0 +1,140 @@
+@use 'variables' as *;
+
+.text-attraction {
+    text-align: center;
+    background-color: $pink1;
+    padding: 24px 16px;
+
+    @media (max-width: 640px) {
+        padding-top: 20px;
+        padding-bottom: 2px;
+    }
+}
+
+.attractions {
+    padding: 40px 0;
+    text-align: center;
+
+    &--eat-and-drink {
+        background-image: linear-gradient(to bottom, $pink1, $pink2);
+    }
+
+    &--music {
+        background-image: linear-gradient(to bottom, $pink2, $purple1);
+    }
+
+    &--games {
+        background-image: linear-gradient(to bottom, $purple1, $purple2);
+    }
+
+    &--simulator {
+        background-image: linear-gradient(to bottom, $purple2, $blue1);
+    }
+
+    &--fantasy {
+        background-image: linear-gradient(to bottom, $blue1, $blue2);
+    }
+
+    &--image-left {
+        .container {
+            flex-direction: row-reverse;
+
+            img {
+                margin: 0 0 0 180px;
+            }
+
+            div {
+                margin: 0 180px 0 40px;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            padding-top: 2px;
+            padding-bottom: 26px;
+
+            .container {
+                text-align: center;
+            }
+
+            div {
+                display: block;
+                margin: 0;
+                padding: 20px;
+            }
+
+            img {
+                width: 100%;
+                margin-right: 0;
+                padding: 20px;
+            }
+        }
+    }
+
+    .container {
+        display: flex;
+    }
+
+    &__image {
+        max-width: 360px;
+        margin-right: 180px;
+    }
+
+    &__details {
+        margin-left: 180px;
+        margin-right: 40px;
+        -webkit-text-stroke: 1px $white1;
+
+        &__title {
+            font-size: 26px;
+            margin-bottom: 20px;
+        }
+
+        &__description {
+            font-size: 20px;
+            line-height: 22px;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        padding-top: 2px;
+        padding-bottom: 26px;
+
+        .container {
+            text-align: center;
+        }
+
+        &__details {
+            display: block;
+            margin: 0;
+            padding: 20px;
+        }
+
+        &__image {
+            width: 100%;
+            margin-right: 0;
+            padding: 20px;
+        }
+    }
+
+    @media (max-width: 640px) {
+        padding-top: 2px;
+        padding-bottom: 26px;
+
+        .container {
+            display: block;
+            text-align: center;
+        }
+
+        &__details {
+            display: block;
+            margin: 0;
+            padding: 20px;
+        }
+
+        &__image {
+            width: 100%;
+            margin-right: 0;
+            padding: 0 20px 0 20px;
+        }
+    }
+}

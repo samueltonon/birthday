@@ -1,0 +1,58 @@
+@use '../variables' as *;
+
+.confirmation-bar {
+    position: absolute;
+    bottom: 520px;
+    left: 920px;
+    right: 20px;
+    padding: 16px 24px;
+    background-color: $white1;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+
+    &__infos {
+        display: flex;
+        gap: 40px;
+
+        &__item {
+            font-size: 14px;
+            color: $black1;
+
+            b {
+                color: $black1;
+                font-size: 18px;
+                display: block;
+            }
+        }
+    }
+
+    @media (max-width: 1024px) {
+        display: flex;
+        bottom: 20px;
+        left: 20px;
+        padding: 12px 12px;
+
+        &__infos {
+            gap: 20px;
+            padding-right: 20px;
+        }
+    }
+
+    @media (max-width: 640px) {
+        display: block;
+        bottom: 20px;
+        left: 10px;
+        padding: 12px 12px;
+        text-align: center;
+
+        &__infos {
+            display: block;
+            padding-right: 0;
+
+            &__item {
+                margin-bottom: 24px;
+            }
+        }
+    }
+}

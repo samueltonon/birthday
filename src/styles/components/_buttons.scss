@@ -1,0 +1,30 @@
+@use '../variables' as *;
+
+.button {
+    padding: 12px;
+    font-size: 18px;
+    text-decoration: none;
+    text-align: center;
+    white-space: nowrap;
+    align-items: center;
+    justify-content: center;
+
+    &--primary {
+        color: $white1;
+        background-color: $purple2;
+        display: flex;
+    }
+
+    @media (max-width: 1024px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    @media (max-width: 640px) {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+}

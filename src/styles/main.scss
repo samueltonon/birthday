@@ -1,4 +1,7 @@
 @use 'hero';
+@use 'components/confirmation_bar';
+@use 'components/buttons';
+@use 'attractions';
 
 * {
     margin: 0;
@@ -22,3 +25,4 @@
         max-width: 100%;
     }
 }
+
