@@ -1,0 +1,42 @@
+@use 'variables' as *;
+
+.footer {
+    padding: 26px 8px;
+    background-image: linear-gradient(to bottom, $blue2, $blue3);
+
+    .container {
+        max-width: 1024px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    &__links {
+        margin-bottom: 16px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        &__item {
+            display: inline-block;
+
+            a {
+                text-decoration: none;
+                padding: 8px 16px;
+                display: block;
+                font-size: 26px;
+
+                &:hover {
+                    color: $pink1;
+                }
+            }
+        }
+    }
+
+    &__signature {
+            margin-bottom: 16px;
+            -webkit-text-stroke: 0.5px $white1;
+    }
+}

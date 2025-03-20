@@ -2,6 +2,7 @@
 @use 'components/confirmation_bar';
 @use 'components/buttons';
 @use 'attractions';
+@use 'footer';
 
 * {
     margin: 0;
@@ -10,6 +11,11 @@
     list-style: none;
     font-family: "Tektur", sans-serif;;
     font-weight: bold;
+    overflow-x: hidden;
+}
+
+body {
+    overflow-y: hidden;
 }
 
 .container {
